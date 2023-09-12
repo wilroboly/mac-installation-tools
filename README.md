@@ -8,7 +8,15 @@ Once on your computer, let's get a few things started:
 
 ## Startup Terminal
 
-We will be working with a terminal window, safari and chrome / firefox eventually. In the meantime, we need our **cli**!
+We will be working with a terminal window, safari and chrome / firefox eventually. In the meantime, we need our **cli**! Let's kickstart the process by either navigating to the `Application > Utilities` folder and selecting `Terminal` app.
+
+![img_1.png](img_1.png)
+
+The below image demonstrates what a terminal window might look like (especially if you have Dark Mode on)
+
+![img_2.png](img_2.png)
+
+Some of you may wish to upgrade or install a different terminal application. I use iTerm. I'll explain how to install that later.
 
 ## Install or update XCODE
 
