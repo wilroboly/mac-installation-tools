@@ -1,14 +1,16 @@
-# How to Setup a Mac for development purposes
+# How to Setup a Mac for Web Development
 
-This is likely going to be an on-going exercise as application needs change over time. For now, we should be satisfied that all our efforts will not be lost.
+> This document will change organically as application needs change and get updated over time.
 
-Our first steps after instantiating an account is either migrating an old user over to the new machine from an older mac system or just starting fresh.
+## After your first login
 
-Once on your computer, let's get a few things started:
+There is a likelihood that you have come to this page right after turning on your new Mac. That's great, your first steps should be, after instantiating an account on our Mac machines, is either migrating an old user over to the new machine from an older Mac system or just starting fresh.
 
-## Startup Terminal
+**Let's get a few things started**
 
-We will be working with a terminal window, safari and chrome / firefox eventually. In the meantime, we need our **cli**! Let's kickstart the process by either navigating to the `Application > Utilities` folder and selecting `Terminal` app.
+## Preparing software
+
+We will be working with a `terminal` window initially. Eventually we might use `Safari`, `Chrome` or `Firefox`. For now, we need our **command line**! Let's kickstart the process by either navigating to the `Application > Utilities` folder and selecting `Terminal` app.
 
 ![img_1.png](img_1.png)
 
@@ -18,15 +20,21 @@ The below image demonstrates what a terminal window might look like (especially 
 
 Some of you may wish to upgrade or install a different terminal application. I use iTerm. I'll explain how to install that later.
 
+# Table of Contents
+1. [Example](#example)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
+4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+
 ## Install or update XCODE
 
-This is going to be the biggest task as it can take a while to update, but well worth it:
+This is going to be the biggest task as it can take a while to update, but its well worth it:
 
 ```shell
 xcode-select --install
 ```
 
-This might tell you that your **xcode** is up-to-date. Check to see if you are in fact running the latest version of git:
+The above instruction might tell you that your **xcode** is up-to-date. Check to see if you are in fact running the latest version of git:
 
 ```shell
 git --version
@@ -83,12 +91,27 @@ brew install git
 
 ## Install a suite of tools
 
-Now we can focus on get a bunch of tools installed which will make life easier:
+Now we can focus on getting a bunch of tools installed to make life easier...
 
+> If you want to know more about a particular package type `brew info <package name>`.
+
+#### Install Slack - Team communication and collaboration software
 ```shell
 brew install --cask slack
+```
+
+#### Install Google Chrome - Web browser
+```shell
 brew install --cask google-chrome
+```
+
+#### Install jq - Lightweight and flexible command-line JSON processor
+```shell
 brew install jq
+```
+
+#### Install yq - Process YAML, JSON, XML, CSV and properties documents from the CLI
+```shell
 brew install yq
 ```
 
@@ -168,4 +191,21 @@ brew install php@8.1
 ```
 
 > It's important to read the documentation and also pay close attention to any post installation instructions Brew offers. You might find sometimes it suggests performing some extra steps, usually with a simple copy and paste approach.
+
+
+## Installing Code Linting and Code Sniffing
+
+From this point forward, there are a lot of choices, to make life a bit easier, the following are good starting points to work with. You can always uninstall, choose to install a different application or set of tools and go about it differently. There is no right or wrong way here. 
+
+### Install GrumPHP 
+
+I suggest following along from here: https://github.com/phpro/grumphp
+
+My suggestions is to use phive OR  the grumphp-shim approach, as it ensures no dependency issues. But, you may find some projects have it installed. So, whatever you choose, make sure if work as seamless as possible between projects and codebases.
+
+I have chosen to install it globally thought [documentation](https://github.com/phpro/grumphp/blob/v2.x/doc/installation/global.md). This gives the the flexibility to play with deeper configuration and complex setups.
+
+You may find by doing it this way, you can also take advantage of some composer packages to enhance GrumPHP.
+
+
 
